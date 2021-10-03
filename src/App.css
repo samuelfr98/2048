@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.Board {
+  align-items: center;
+  justify-content: center;
+  width: 70vmin; 
+  height: 70vmin; 
+  margin: auto; 
+  background-color: rgb(170, 170, 169);
+  border-radius: 30px 30px 30px 30px;
+}
+
+.Instructions {
+  text-align: center;
+  font-size: xx-large;
+  color: darkblue;
+}
+
+.Tile {
+  align-items: center;
+  justify-content: center;
+  width: 15vmin;
+  height: 15vmin;
+  margin: 2vmin 2vmin 0 0;
+  background-color: rgb(250, 250, 248);
+  float: left;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.ScoreTile {
+  align-items: center;
+  justify-content: center;
+  width: 15vmin;
+  height: 15vmin;
+  margin: 2vmin 2vmin 0 0;
+  background-color: rgb(250, 250, 248);
+  float: left;
+  border-radius: 30px 30px 30px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* From article: justifies grid design to center by offsetting leftmost column from background  */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+.Tile:nth-child(4n+1) {
+  margin-left: 2vmin;
+}
+ 
+.Reset {
+  text-align: center;  
+  justify-content: center;
+  position: absolute;
+  line-height: 10vmin;
+  height: 15vmin;
+  width: 15vmin;
+  font-size: xx-large;
+}
+
+.Score {
+  text-align: right;  
+  justify-content: center;
+  position: absolute;
+  line-height: 10vmin;
+  font-size: xx-large;
+}
+
+.GameProgress {
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  margin-right: 2vmin;
+  font-size: xx-large;
+}
+
+.Over {
+  font-size: larger;
+  color: darkred;
+}
+
+.Won {
+  font-size: larger;
+  color: dodgerblue;
+}
+
+.Value {
+  background-color: rgb(247, 209, 127);
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 5vmin;
+  font-weight: bold;
+  text-align: center;
+  height: 15vmin;
+  width: 15vmin;
+  line-height: 20vmin;
+  border-radius: 30px 30px 30px 30px;
+}
